@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  background: linear-gradient(to top right, #000000 , #130F40 );
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.head_discription {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark {
+  color: silver;
+}
+
+.light_theme {
+  color: black;
+  background: linear-gradient(to top left, #FBAB7E , #F7686A);
+}
+
+.light_a{
+    color: black;
+}
+
+.theme_btn {
+  line-height: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: grey;
+  color: gold;
+}
+
+.invisible {
+  display: none;
+}
+
+.heading_text {
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+  background: -webkit-linear-gradient(#12b1dd, #f180f1);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headind_lighttheme {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+  background: -webkit-linear-gradient( #130F40, #233329);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile_img {
+  width: 200px;
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+  border-radius: 100%;
+}
+
+.profile_img:hover{
+  opacity: 0.8;
+}
+
+.tools_img {
+  width: 850px;
+  padding: 20px;
+}
+
+.introduction {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro_head {
+  font-size: 30px;
+  font-family: "Fira Sans", sans-serif;
+  padding: 20px;
+}
+
+.intro_text {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+.qualifications {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #243b55;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.light-qualifications{
+  background: linear-gradient(to top right, #243b55 , #233329);
+}
+
+.qualifications .span-effect {
+  position: absolute;
+  display: block;
+}
+
+.qualifications .span-effect:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.qualifications .span-effect:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.qualifications .span-effect:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.qualifications .span-effect:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.course_name{
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.course_dis{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.lang_heading{
+    margin-top: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.tools_heading{
+    margin-top: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.lang_dis{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.tools_dis{
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.past_work{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pastwork_heading{
+    margin: 10px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.pastwork_dis{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+a{
+    color: white;
+}
+
+.pastwork-card-section{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pastwork_card{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pastwork_img{
+    width: 300px;
+    border-radius: 8px;
+}
+
+.pastwork_img:hover{
+  opacity: 0.6;
+}
+
+.workcard_heading{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.footer-txt{
+  font-size: 30px;
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px;
+}
+
+.contact-info{
+  margin-top: 30px;
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly
+}
+
+.contact-button-div{
+  display: flex;
+}
+
+.contact-button{
+  margin: 15px;
+  padding: 15px;
+  line-height: 0;
+  border-radius: 100%;
+  border:1px solid white;
+}
+
+.contact-button:hover{
+  opacity: 0.7;
+}
+
+.fa{
+  font-size: 30px;
+}
+
+.c-btn1{
+  color: white;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.c-btn2{
+  color: white;
+  background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+}
+
+.c-btn3{
+  color: white;
+  background: linear-gradient(to top right,yellow,red );
+}
+
+.signature{
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media screen and (max-width:900px) {
+  .tools_img{
+    width: 500px;
+  }
+  .pastwork-card-section{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .tools_img{
+    width: 350px;
+  }
+  .profile_img {
+    width: 150px;
+  }
+  
+}
+
