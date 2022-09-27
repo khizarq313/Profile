@@ -14,6 +14,10 @@ header {
   justify-content: end;
 }
 
+hr{
+  border:#24a0ed 1px solid ;
+}
+
 .head_discription {
   margin: 20px;
   display: flex;
@@ -114,8 +118,8 @@ header {
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  background-color: #243b55;
-  color: #03e9f4;
+  background-color:  hsl(235, 24%, 19%);
+  color: #24a0ed;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -123,10 +127,6 @@ header {
   transition: 0.5s;
   margin-top: 40px;
   letter-spacing: 4px;
-}
-
-.light-qualifications{
-  background: linear-gradient(to top right, #243b55 , #233329);
 }
 
 .qualifications .span-effect {
@@ -139,7 +139,7 @@ header {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent,#24a0ed);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -158,7 +158,7 @@ header {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #24a0ed);
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
@@ -178,7 +178,7 @@ header {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #24a0ed);
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -198,6 +198,9 @@ header {
   left: 0;
   width: 2px;
   height: 100%;
+  background: linear-gradient(360deg, transparent,#24a0ed);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
@@ -367,9 +370,9 @@ footer{
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
   .tools_img{
-    width: 350px;
+    width: 400px;
   }
   .profile_img {
     width: 150px;
@@ -377,3 +380,8 @@ footer{
   
 }
 
+@media screen and (max-width:450px) {
+  .tools_img{
+    width: 350px;
+  }
+}
