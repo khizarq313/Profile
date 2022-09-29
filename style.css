@@ -278,7 +278,7 @@ a{
 }
 
 .pastwork_card{
-    margin-top: 30px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
 }
