@@ -6,6 +6,7 @@
 body {
   color: white;
   background: linear-gradient(to top right, #000000 , #130F40 );
+
 }
 
 header {
@@ -23,6 +24,7 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .dark {
@@ -58,7 +60,7 @@ hr{
 }
 
 .heading {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Comfortaa", cursive;
   background: -webkit-linear-gradient(#12b1dd, #f180f1);
   background-clip: content-box;
@@ -236,6 +238,10 @@ hr{
     margin: 10px;
     font-size: 20px;
     font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .lang_dis{
@@ -360,13 +366,25 @@ footer{
   font-family: "Fira Sans", sans-serif;
 }
 
+@media screen and (max-width:1500px) {
+  .pastwork-card-section{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 @media screen and (max-width:900px) {
   .tools_img{
     width: 500px;
   }
+  
+}
+
+@media screen and (max-width:750px) {
   .pastwork-card-section{
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -382,6 +400,18 @@ footer{
 
 @media screen and (max-width:450px) {
   .tools_img{
-    width: 350px;
+    width: 300px;
+  }
+  .profile_img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .tools_img{
+    width: 250px;
+  }
+  .profile_img {
+    width: 120px;
   }
 }
